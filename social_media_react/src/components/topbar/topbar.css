@@ -1,0 +1,96 @@
+.topBarContainer{
+    height: 50px;
+    width: 100%;
+    background-color: #00BFFF;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;   /*задаваме, че ще е над всичко, за да може при плъзгане да не ни остава десният бар над горния такъв.*/
+}
+
+.logo{
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.topBarLeft{
+    flex: 3;
+}
+
+.topBarCenter{
+    flex: 5;
+}
+
+.searchBar{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon{
+    font-size: 20px !important; /*Poneje e material icon, trqbwa da zadadem !important, zashtoto inache ne iska da prieme stojnostta...*/
+    margin-left: 10px;
+}
+
+.searchInput{
+    border: none;
+    width: 70%;
+}
+
+.searchInput:focus{
+    outline: none;
+}
+
+.topBarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.topBarLink{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.topBarIcons{
+    display: flex;
+}
+
+.topBarIconItem{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topBarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: #CD5C5C;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.profilePicture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;  /*towa realno kara snimkata da izglejda dosta po-dobre gore wdqsno. Promenq nachina na izobrazqwane, ne raboti wyrhu funkcionalnostta j ili wyrhi razmerite*/
+    cursor: pointer;
+}
